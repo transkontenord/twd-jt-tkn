@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+{% assign lang = page.lang | default: "es" %}
+<html lang="{{ lang }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css" />
+    <link rel="stylesheet" href="/assets/js/bootstrap/dist/css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" href="/assets/js/slider-revolution/src/css/settings.css" media="all" />
+    <link rel="stylesheet" href="/assets/js/OwlCarousel2/dist/assets/owl.carousel.min.css" media="all" />
+    <link rel="stylesheet" href="/assets/js/OwlCarousel2/dist/assets/owl.theme.green.min.css" media="all" />
+    <link rel="stylesheet" href="/assets/js/screen.css" media="screen, projection" />
+    <link rel="stylesheet" href="a/c/print.css" media="print" />
+
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script type="text/javascript" src="/assets/js/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="/assets/js/slider-revolution/src/js/jquery.themepunch.plugins.min.js"></script>
+    <script type="text/javascript" src="/assets/js/slider-revolution/src/js/jquery.themepunch.revolution.min.js"></script>
+    <script type="text/javascript" src="/assets/js/OwlCarousel2/dist/owl.carousel.min.js"></script>
+    <script type="text/javascript" src="/assets/js/sticky/jquery.sticky.js"></script>
+    <script type="text/javascript" src="/assets/js/custom.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="/assets/js/html5shiv/dist/html5shiv.min.js"></script>
+    <script src="/assets/js/html5shiv/dist/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+
+    <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,400italic,700italic,300,300italic' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    {% include navigation.html %}
+
+    <section>
+      {% include slider.html %}
+    </section>
+
+    <main role="main">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h2>{{ site.data.translations[lang].servicios | upcase }}</h2>
+            <ul>
+              {% assign servicios = site.servicios | where: "lang", lang | sort: "orden" %}
+              {% for servicio in servicios %}
+              <li>
+                <p class="h4">
+                  <i class="fa fa-check">&nbsp;</i>
+                  {{ servicio.title }}
+                </p>
+              </li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2>{{ site.data.translations[lang].certificaciones | upcase }}</h2>
+            <ul>
+              {% assign documentos = site.documentos | where: "lang", lang %}
+              {% for documento in documentos %}
+              <li><img src="{{ documento.imagen }}" alt="{{ documento.title }}" class="img-responsive" /></li>
+              {% endfor %}
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <h2>{{ site.data.translations[lang].ultimas-noticias | upcase }}</h2>
+            {% for post in site.posts limit: 1 %}
+            {% include post-excerpt.html %}
+            {% endfor %}
+          </div>
+        </div>
+      </div>
+    </main>
+
+    {% include footer.html %}
+  </body>
+</html>

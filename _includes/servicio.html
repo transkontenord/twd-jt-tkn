@@ -1,0 +1,21 @@
+<div class="col-xs-12 col-sm-6">
+<div class="panel panel-default">
+  <!-- Default panel contents -->
+  <div class="panel-heading">{{ servicio.title }}</div>
+
+  <!-- List group -->
+  <ul class="list-group">
+    {% for punto in servicio.propiedades %}
+    <li class="list-group-item">{{ punto["texto"] }}</li>
+    {% endfor %}
+  </ul>
+
+  <div class="panel-body">
+    <div class="owl-carousel owl-theme">
+      {% for item in servicio.galeria %}
+      <div class="item"><img src="{{ item["imagen"] }}" class="img-responsive"></div>
+      {% endfor %}
+    </div>
+  </div>
+</div>
+</div>

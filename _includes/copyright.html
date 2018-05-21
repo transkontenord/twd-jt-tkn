@@ -1,0 +1,9 @@
+{% assign lang = page.lang | default: "es" %}
+{% case lang %}
+  {% when "es" %}{% assign url = "aviso-legal-y-política-de-cookies" %}
+  {% when "en" %}{% assign url = "legal-notice-and-cookie-policy" %}
+  {% when "fr" %}{% assign url = "mentions-légales-et-politique-en-matière-de-cookies" %}
+  {% when "de" %}{% assign url = "rechtshinweis-und-cookie-richtlinien" %}
+{% endcase %}
+
+<p>&copy;2015-{{ site.time | date: "%Y" }} {{ site.title }} &bull; <a href="/{{ lang }}/{{ url }}">{{ site.data.translations[lang].aviso-legal-cookies }}</a></p>

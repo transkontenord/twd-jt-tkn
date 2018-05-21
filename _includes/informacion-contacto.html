@@ -1,0 +1,17 @@
+{% assign lang = page.lang | default: "es" %}
+<h2>{{ site.data.translations[lang].contacto }}</h2>
+<dl itemscope itemtype="http://data-vocabulary.org/Organization">
+<dt class="hidden">Org:</dt>
+<dd class="hidden" itemprop="name">TRANSKONTENORD</dd>
+<dt>Dirección:</dt>
+<dd itemprop="address" itemscope itemtype="http://data-vocabulary.org/Address"><i class="fa fa-home">&nbsp;</i><span itemprop="street-address">Arañaburu 7 P.I Lanbarren</span> <span itemprop="postal-code">20180</span>&nbsp;<span itemprop="locality">Oiartzun</span></dd>
+<dt>Teléfono:</dt>
+<dd itemprop="tel"><i class="fa fa-phone">&nbsp;</i>+34 943 636 179</dd>
+<dt>Email:</dt>
+<dd><i class="fa fa-envelope">&nbsp;</i>transkontenord@transkontenord.com</dd>
+<dt>Geo:</dt>
+<dd><i class="fa fa-map-marker">&nbsp;</i><span class="geo hidden" itemprop="geo" itemscope="itemscope" itemtype="http://data-vocabulary.org/Geo/">
+        <abbr class="latitude" itemprop="latitude" title="43.3183531">43.3183531</abbr>,
+        <abbr class="longitude" itemprop="longitude" title="-1.8650822">-1.8650822</abbr>
+      </span><a href="https://www.google.com/maps/d/embed?mid=zgdbPGQ__nOg.kV-yi9aRNOLA&usp=sharing">Ver en google maps</a></dd>
+</dl>

@@ -1,0 +1,16 @@
+{% assign lang = page.lang | default: "es" %}
+<h2>{{ site.data.translations[lang].menu }}</h2>
+<ul>
+  <li>
+    <a href="{{ site.data.menu[lang].empresa.url }}">{{ site.data.menu[lang].empresa.name }}</a>
+  </li>
+  <li>
+    <a href="{{ site.data.menu[lang].servicios.url }}">{{ site.data.menu[lang].servicios.name }}</a>
+  </li>
+  <li>
+    <a href="{{ site.data.menu[lang].noticias.url }}">{{ site.data.menu[lang].noticias.name }}</a>
+  </li>
+  <li>
+    <a href="{{ site.data.menu[lang].contacto.url }}">{{ site.data.menu[lang].contacto.name }}</a>
+  </li>
+</ul>
