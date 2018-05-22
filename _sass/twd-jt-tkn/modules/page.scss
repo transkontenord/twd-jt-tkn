@@ -1,4 +1,4 @@
-.page .content .field-name-field-page-intro {
+.page .intro {
   font-size: 1.1875em;
   line-height: 1.89474em;
   border-width: 0.0625em;
@@ -6,6 +6,7 @@
   padding: 1.4375em;
   border: none;
   border-bottom: solid 1px #415200;
+  text-align: justify;
 }
 /* line 192, ../../scss/screen.scss */
 .page .content .field-name-body {
@@ -14,47 +15,27 @@
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
-/* line 195, ../../scss/screen.scss */
-.page .content article.equipo {
+
+.page .row.valores {
+  text-align: justify;
+}
+.page .row.valores h4 {
   text-align: center;
+}
+.page .row.valores i {
+  color: #a2cd00;
+}
+
+/* line 569, ../../scss/screen.scss */
+.node-page .row.localizacion {
   margin-top: 1.5em;
   padding-top: 0em;
   padding-bottom: 0em;
   margin-bottom: 1.5em;
-}
-/* line 198, ../../scss/screen.scss */
-.page .content article.equipo img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
-/* line 203, ../../scss/screen.scss */
-.page .content article.equipo .caption {
   border-width: 0.0625em;
   border-style: solid;
   padding: 1.4375em;
   border: none;
-  width: 100%;
-  background-color: #a2cd00;
-  color: white;
-}
-/* line 210, ../../scss/screen.scss */
-.page .content article.equipo .caption h1, .page .content article.equipo .caption h2 {
-  font-size: 1em;
-  line-height: 2.25em;
-  margin-top: 0em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0em;
-  font-weight: 700;
-}
-/* line 215, ../../scss/screen.scss */
-.page .content article.equipo .caption a[href^="mailto:"] {
-  font-weight: 700;
-  color: white;
-}
-/* line 218, ../../scss/screen.scss */
-.page .content article.equipo .caption a[href^="mailto:"]::before {
-  font-family: Fontawesome;
-  content: "\f003\0000a0";
+  padding-left: 0;
+  padding-right: 0;
 }

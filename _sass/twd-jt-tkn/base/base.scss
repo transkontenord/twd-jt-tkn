@@ -372,11 +372,6 @@ footer .region-footer .block {
   border-bottom: none;
 }
 
-/* line 466, ../../scss/screen.scss */
-.node-page .field-name-field-page-intro {
-  text-align: justify;
-}
-
 /* line 470, ../../scss/screen.scss */
 .node-terminal {
   margin-top: 4.5em;
@@ -463,81 +458,7 @@ footer .region-footer .block {
   color: #a2cd00;
 }
 
-/**
- * Page: history
- */
-/* line 560, ../../scss/screen.scss */
-.node-page .row.valores {
-  text-align: justify;
-}
-/* line 562, ../../scss/screen.scss */
-.node-page .row.valores h4 {
-  text-align: center;
-}
-/* line 565, ../../scss/screen.scss */
-.node-page .row.valores i {
-  color: #a2cd00;
-}
-/* line 569, ../../scss/screen.scss */
-.node-page .row.localizacion {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-  border-width: 0.0625em;
-  border-style: solid;
-  padding: 1.4375em;
-  border: none;
-  padding-left: 0;
-  padding-right: 0;
-}
-/* line 577, ../../scss/screen.scss */
-.node-page .timeline {
-  width: 100%;
-}
-/* line 582, ../../scss/screen.scss */
-.node-page .timeline .icon-date-container {
-  background-color: #fff;
-  border: 2px solid #ddd;
-  border-radius: 50%;
-  float: left;
-  height: 70px;
-  position: relative;
-  width: 70px;
-  z-index: 2;
-}
-/* line 592, ../../scss/screen.scss */
-.node-page .timeline .icon-date-container i {
-  display: table-cell;
-  font-size: 24px;
-  height: 70px;
-  text-align: center;
-  vertical-align: middle;
-  width: 70px;
-  color: #a2cd00;
-}
-/* line 601, ../../scss/screen.scss */
-.node-page .timeline .timeline-item-details {
-  padding-bottom: 60px;
-  padding-left: 100px;
-  position: relative;
-}
-/* line 605, ../../scss/screen.scss */
-.node-page .timeline .timeline-item-details h3 {
-  font-size: 1.5em;
-}
-/* line 609, ../../scss/screen.scss */
-.node-page .timeline li .timeline-item-details::before {
-  background-color: #ddd;
-  content: "";
-  display: block;
-  height: 100%;
-  left: 35px;
-  position: absolute;
-  top: 0;
-  width: 1px;
-  z-index: 1;
-}
+
 
 /**
  * Front
