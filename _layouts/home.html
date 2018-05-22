@@ -30,7 +30,7 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <h2>{{ site.data.translations[lang].certificaciones | upcase }}</h2>
+            <h2 class="vertical-rhythm mt-0">{{ site.data.translations[lang].certificaciones | upcase }}</h2>
             <ul>
               {% assign documentos = site.documentos | where: "lang", lang %}
               {% for documento in documentos %}
@@ -39,7 +39,7 @@
             </ul>
           </div>
           <div class="col-md-4">
-            <h2>{{ site.data.translations[lang].ultimas-noticias | upcase }}</h2>
+            <h2 class="vertical-rhythm mt-0">{{ site.data.translations[lang].ultimas-noticias | upcase }}</h2>
             {% for post in site.posts limit: 1 %}
             {% include post-excerpt.html %}
             {% endfor %}
