@@ -1,0 +1,40 @@
+#main-menu.navbar {
+  border-top: 0;
+  margin-bottom: 0;
+  background-color: rgba(255, 255, 255, 0.9);
+  width: 100%;
+  z-index: 100;
+  .navbar-header {
+    padding-bottom: 50px;
+    .navbar-brand {
+      padding: 0;
+    }
+  }
+  #navbar-main-menu {
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 768px) {
+  #main-menu.navbar {
+    #navbar-main-menu {
+      margin-top: 1.5em;
+      .active-trail a {
+        border-bottom: solid 3px #a2cd00;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  #main-menu.navbar {
+    .navbar-nav {
+      display: inline-block;
+      float: none;
+      vertical-align: top;
+    }
+    .navbar-collapse {
+      text-align: center;
+    }
+  }
+}

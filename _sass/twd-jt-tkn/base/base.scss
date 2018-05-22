@@ -44,52 +44,6 @@ sub {
   margin-top: 5em;
 }
 
-/**
- * Menú
- */
-/* line 107, ../../scss/screen.scss */
-#main-menu.navbar {
-  border-top: 0;
-  margin-bottom: 0;
-  background-color: rgba(255, 255, 255, 0.9);
-  width: 100%;
-  z-index: 100;
-}
-/* line 113, ../../scss/screen.scss */
-#main-menu.navbar .navbar-header {
-  padding-bottom: 50px;
-}
-/* line 115, ../../scss/screen.scss */
-#main-menu.navbar .navbar-header .navbar-brand {
-  padding: 0;
-}
-/* line 121, ../../scss/screen.scss */
-#main-menu.navbar #navbar-main-menu {
-  text-transform: uppercase;
-}
-@media (min-width: 768px) {
-  /* line 121, ../../scss/screen.scss */
-  #main-menu.navbar #navbar-main-menu {
-    margin-top: 1.5em;
-  }
-  /* line 128, ../../scss/screen.scss */
-  #main-menu.navbar #navbar-main-menu .active-trail a {
-    border-bottom: solid 3px #a2cd00;
-  }
-}
-@media (min-width: 768px) {
-  /* line 135, ../../scss/screen.scss */
-  #main-menu.navbar .navbar-nav {
-    display: inline-block;
-    float: none;
-    vertical-align: top;
-  }
-  /* line 141, ../../scss/screen.scss */
-  #main-menu.navbar .navbar-collapse {
-    text-align: center;
-  }
-}
-
 /* line 147, ../../scss/screen.scss */
 main {
   font-weight: 300;
