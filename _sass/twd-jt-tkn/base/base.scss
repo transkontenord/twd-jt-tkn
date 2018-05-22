@@ -452,9 +452,7 @@ footer .region-footer .block {
   height: auto;
 }
 /* line 545, ../../scss/screen.scss */
-.panel .list-group li::before {
-  font-family: Fontawesome;
-  content: "\f178\0000a0";
+.panel .list-group li i {
   color: #a2cd00;
 }
 
