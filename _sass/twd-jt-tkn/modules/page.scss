@@ -8,22 +8,15 @@
   border-bottom: solid 1px #415200;
   text-align: justify;
 }
-/* line 192, ../../scss/screen.scss */
-.page .body {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-}
 
 .page .valores {
   text-align: justify;
-}
-.page .valores h4 {
-  text-align: center;
-}
-.page .valores i {
-  color: #a2cd00;
+  h4 {
+    text-align: center;
+  }
+  i {
+    color: #a2cd00;
+  }
 }
 
 /* line 569, ../../scss/screen.scss */
