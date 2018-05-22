@@ -8,6 +8,9 @@
     {% include header-links.html %}
     {% include navigation.html %}
     <main role="main" class="page">
+      <div class="container-fluid bg-green" style="background-image: url({{ page.banner }}); background-size: cover; background-position: center center">
+        <h1><span>{{ page.title }}</span></h1>
+      </div>
       <div class="container">
         {{ content }}
       </div>
