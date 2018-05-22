@@ -44,7 +44,7 @@ sub {
   margin-top: 5em;
 }
 
-/* line 147, ../../scss/screen.scss */
+
 main {
   font-weight: 300;
   margin-top: 1.5em;
@@ -52,113 +52,42 @@ main {
   padding-bottom: 0em;
   margin-bottom: 1.5em;
   margin-top: 0;
+  h1 {
+    margin-top: 3em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-bottom: 3em;
+    line-height: 2.25em;
+    text-align: center;
+    span {
+      padding: 0.5em;
+      background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
+    }
+  }
+  p, dl {
+    margin-top: 1.5em;
+    padding-top: 0em;
+    padding-bottom: 0em;
+    margin-bottom: 1.5em;
+  }
+  .container-fluid {
+    max-width: 1300px;
+    &.bg-green {
+      background-color: #a2cd00;
+      color: white;
+      margin-bottom: 1.5em;
+      background-size: cover;
+      background-position: center left;
+      background-repeat: no-repeat;
+    }
+  }
 }
-/* line 151, ../../scss/screen.scss */
-main h1 {
-  margin-top: 3em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 3em;
-  line-height: 2.25em;
-  text-align: center;
-}
-/* line 155, ../../scss/screen.scss */
-main h1 span {
-  padding: 0.5em;
-  background: rgba(0, 0, 0, 0.7) none repeat scroll 0 0;
-}
-/* line 160, ../../scss/screen.scss */
+
 main h1, main h2, main h3, main h4, main h5, main h6 {
   text-transform: uppercase;
 }
-/* line 163, ../../scss/screen.scss */
-main p {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-}
-/* line 166, ../../scss/screen.scss */
-main dl {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-}
-/* line 169, ../../scss/screen.scss */
-main .container-fluid {
-  max-width: 1300px;
-}
-/* line 172, ../../scss/screen.scss */
-main .container-fluid.bg-green {
-  background-color: #a2cd00;
-  color: white;
-  margin-bottom: 1.5em;
-  background-size: cover;
-  background-position: center left;
-  background-repeat: no-repeat;
-}
-/* line 183, ../../scss/screen.scss */
-main.page .content .field-name-field-page-intro {
-  font-size: 1.1875em;
-  line-height: 1.89474em;
-  border-width: 0.0625em;
-  border-style: solid;
-  padding: 1.4375em;
-  border: none;
-  border-bottom: solid 1px #415200;
-}
-/* line 192, ../../scss/screen.scss */
-main.page .content .field-name-body {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-}
-/* line 195, ../../scss/screen.scss */
-main.page .content article.equipo {
-  text-align: center;
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-}
-/* line 198, ../../scss/screen.scss */
-main.page .content article.equipo img {
-  display: block;
-  width: 100%;
-  max-width: 100%;
-}
-/* line 203, ../../scss/screen.scss */
-main.page .content article.equipo .caption {
-  border-width: 0.0625em;
-  border-style: solid;
-  padding: 1.4375em;
-  border: none;
-  width: 100%;
-  background-color: #a2cd00;
-  color: white;
-}
-/* line 210, ../../scss/screen.scss */
-main.page .content article.equipo .caption h1, main.page .content article.equipo .caption h2 {
-  font-size: 1em;
-  line-height: 2.25em;
-  margin-top: 0em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 0em;
-  font-weight: 700;
-}
-/* line 215, ../../scss/screen.scss */
-main.page .content article.equipo .caption a[href^="mailto:"] {
-  font-weight: 700;
-  color: white;
-}
-/* line 218, ../../scss/screen.scss */
-main.page .content article.equipo .caption a[href^="mailto:"]::before {
-  font-family: Fontawesome;
-  content: "\f003\0000a0";
-}
+
+
 /* line 227, ../../scss/screen.scss */
 main #content {
   overflow: hidden;
