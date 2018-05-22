@@ -16,7 +16,7 @@
       <div class="container vertical-rhythm mt-5">
         <div class="row">
           <div class="col-md-4">
-            <h2>{{ site.data.translations[lang].servicios | upcase }}</h2>
+            <h2 class="vertical-rhythm mt-0">{{ site.data.translations[lang].servicios | upcase }}</h2>
             <ul>
               {% assign servicios = site.servicios | where: "lang", lang | sort: "orden" %}
               {% for servicio in servicios %}

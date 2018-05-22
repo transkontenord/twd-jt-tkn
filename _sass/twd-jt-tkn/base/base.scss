@@ -37,35 +37,11 @@ sub {
   padding-bottom: 0em;
   margin-bottom: 1.5em;
 }
+.mt-0 {
+  margin-top: 0;
+}
 .mt-5 {
   margin-top: 5em;
-}
-
-/**
- * REgion Front
- */
-/* line 88, ../../scss/screen.scss */
-.region-front {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-}
-/* line 94, ../../scss/screen.scss */
-.region-front .region {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-  margin-top: 5em;
-}
-/* line 97, ../../scss/screen.scss */
-.region-front .region h2 {
-  margin-top: 1.5em;
-  padding-top: 0em;
-  padding-bottom: 0em;
-  margin-bottom: 1.5em;
-  margin-top: 0;
 }
 
 /**
