@@ -34,7 +34,7 @@
             <ul>
               {% assign documentos = site.documentos | where: "lang", lang %}
               {% for documento in documentos %}
-              <li><img src="{{ documento.imagen }}" alt="{{ documento.title }}" class="img-responsive" /></li>
+              <li><img src="{{ documento.imagen }}" alt="{{ documento.title }}" width="220px" /></li>
               {% endfor %}
             </ul>
           </div>
