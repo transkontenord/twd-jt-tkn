@@ -44,21 +44,18 @@
   font-size: 1.2em;
 }
 
-footer #block-block-2 li::before {
-  font-family: Fontawesome;
+.footer__block.footer__menu li::before {
+  font-family: "Font Awesome 5 Free";
   content: "\f105\0000a0";
 }
-/* line 322, ../../scss/screen.scss */
-footer .region-footer-thirdcolumn .logo {
+
+.footer__block.footer__logo .logo {
   margin: 0 auto;
 }
-/* line 326, ../../scss/screen.scss */
-.footer__block.small-font {
+
+.footer__block.footer__copy {
   font-size: 0.875em;
   line-height: 1.71429em;
-}
-/* line 328, ../../scss/screen.scss */
-footer .region-footer .block {
   display: inline-block;
   border: none;
   margin: 0;
