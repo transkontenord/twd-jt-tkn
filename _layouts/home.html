@@ -32,7 +32,7 @@
           <div class="col-md-4">
             <h2 class="vertical-rhythm mt-0">{{ site.data.translations[lang].certificaciones | upcase }}</h2>
             <ul>
-              {% assign documentos = site.documentos | where: "lang", lang | where: "tipo": "certificado" | sort: "orden" %}
+              {% assign documentos = site.documentos | where: "lang", lang | where: "tipo", "certificado" | sort: "orden" %}
               {% for documento in documentos %}
               <li><img src="{{ documento.imagen }}" alt="{{ documento.title }}" width="220px" /></li>
               {% endfor %}
