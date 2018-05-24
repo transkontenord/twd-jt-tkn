@@ -1,17 +1,17 @@
-<article class="post post--teaser">
-  <div class="post--date">
-    <p class="post--day">{{ post.date | date: "%d" }}</p>
-    <p class="post--month-year">{{ post.date | date: "%m - %Y"}}</p>
+<article class="post post__teaser">
+  <div class="post__date">
+    <p class="post__date-day">{{ post.date | date: "%d" }}</p>
+    <p class="post__date-month-year">{{ post.date | date: "%m - %Y"}}</p>
   </div>
-  <div class="post--content">
+  <div class="post__content">
     <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
-    <div class="post--excerpt">
+    <div class="post__excerpt">
       <p>{{ post.excerpt }}</p>
     </div>
   </div>
-  <div class="post--links">
+  <div class="post__links">
     <ul class="links inline">
-      <li class="post--link">
+      <li class="post__link">
         <a href="{{ post.url }}" rel="tag" title="Actualización de la flota">{{ site.data.translations[page.lang].leer-mas}}</a>
       </li>
     </ul>
